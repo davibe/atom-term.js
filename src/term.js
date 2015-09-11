@@ -2525,8 +2525,8 @@ Terminal.prototype.keyDown = function(ev) {
       break;
     // CTRL-K
     case 75:
-      if ((!isMac && ev.ctrlKey) || (isMac && ev.metaKey)) {
-        this.clear();
+      if ((!this.isMac && ev.ctrlKey) || (this.isMac && ev.metaKey)) {
+        thisclear();
         return cancel(ev);
       }
     // F1
